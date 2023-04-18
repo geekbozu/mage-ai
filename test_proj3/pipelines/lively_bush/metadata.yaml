@@ -1,0 +1,37 @@
+blocks:
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks:
+  - polished_tree
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: yaml
+  name: aged bush
+  status: updated
+  type: data_loader
+  upstream_blocks: []
+  uuid: aged_bush
+- all_upstream_blocks_executed: false
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: yaml
+  name: polished tree
+  status: not_executed
+  type: data_exporter
+  upstream_blocks:
+  - aged_bush
+  uuid: polished_tree
+data_integration: null
+description: null
+extensions: {}
+name: lively bush
+type: streaming
+updated_at: '2023-04-18 14:00:39'
+uuid: lively_bush
+widgets: []

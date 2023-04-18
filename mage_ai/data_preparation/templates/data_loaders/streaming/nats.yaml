@@ -1,0 +1,7 @@
+server_urls: ['nats://192.168.1.108']
+connector_type: nats
+subject_name: test
+durable_name: test
+stream_name: test
+batch_size: 1   # Between 1 and 10
+wait_time_seconds: 1

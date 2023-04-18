@@ -22,6 +22,10 @@ class SourceFactory:
             from mage_ai.streaming.sources.azure_event_hub import AzureEventHubSource
 
             return AzureEventHubSource(config, **kwargs)
+        elif connector_type == SourceType.NATS:
+            from mage_ai.streaming.sources.nats import NatsSource
+
+            return NatsSource(config, **kwargs)
         elif connector_type == SourceType.RABBITMQ:
             from mage_ai.streaming.sources.rabbitmq import RabbitMQSource
 

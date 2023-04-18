@@ -34,6 +34,7 @@ const getDataSourceTypes = (
         DataSourceTypeEnum.AZURE_EVENT_HUB,
         DataSourceTypeEnum.KAFKA,
         DataSourceTypeEnum.KINESIS,
+        DataSourceTypeEnum.NATS,
         DataSourceTypeEnum.RABBITMQ,
       ],
       [BlockTypeEnum.DATA_EXPORTER]: [
