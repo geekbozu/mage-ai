@@ -79,7 +79,7 @@ class NatsSource(BaseSource):
                 if len(parsed_messages) > 0:
                     self._print(f'Received {len(parsed_messages)} message. '
                                 f'Sample: {parsed_messages[0]}.')
-                    #handler(parsed_messages)
+                    handler(parsed_messages)
 
         except Exception:
             self._print(f'Couldn\'t receive messages from queue {self.config.subject_name}.')
