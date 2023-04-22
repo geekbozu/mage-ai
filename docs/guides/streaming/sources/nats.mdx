@@ -1,3 +1,22 @@
+---
+title: "Nats"
+---
+
+https://nats.io/about/
+
+## Basic config
+
+```yaml
+connector_type: nats
+
+server_urls: ['nats://demo.nats.io:4222']
+subject_name: test
+wait_time_seconds: 1
+```
+
+## Config with jetstream consumer
+
+```
 connector_type: nats
 
 server_urls: ['nats://demo.nats.io:4222']
@@ -9,3 +28,5 @@ jetstream_config:
     batch_size: 1   
     durable_name: test
     stream_name: test
+```
+
