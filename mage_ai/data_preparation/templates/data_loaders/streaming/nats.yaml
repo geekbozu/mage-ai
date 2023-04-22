@@ -1,7 +1,13 @@
-server_urls: ['nats://192.168.1.108']
+server_urls: ['nats://demo.nats.io:4222']
+jetstream: true
 connector_type: nats
 subject_name: test
-durable_name: test
-stream_name: test
-batch_size: 1   # Between 1 and 10
+
 wait_time_seconds: 1
+
+# Jetstream will use a Pull based consumer, pulling in Batchsize, over wait_time_seconds
+# Assumes you have a Durable created to bind to. 
+jetstream_config:
+    batch_size: 1   
+    durable_name: test
+    stream_name: test
